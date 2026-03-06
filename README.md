@@ -47,8 +47,5 @@ Titan-Watch is divided into four main logical layers within a single file:
 3.  **Rendering Engine (`TerminalRenderer`):** Manages raw ANSI terminal codes. It builds the entire visual frame in memory (double-buffering) before flushing it to `sys.stdout`.
 4.  **Orchestrator (`TaskScheduler`):** The heart of the application. It spins up the `asyncio` event loop, managing the periodic tick rate (FPS) for both data collection and UI updates.
 
-## Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/titan-watch/issues).
-
 ## License
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
