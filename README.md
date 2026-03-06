@@ -22,24 +22,18 @@ Titan-Watch demonstrates advanced Python architectural concepts—such as the Re
 
 ## Installation & Usage
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/yourusername/titan-watch.git](https://github.com/yourusername/titan-watch.git)
-    cd titan-watch
-    ```
-
-2.  **Create a virtual environment (recommended):**
+1.  **Create a virtual environment (recommended):**
     ```bash
     python3 -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3.  **Install the required dependency:**
+2.  **Install the required dependency:**
     ```bash
     pip install psutil
     ```
 
-4.  **Run the monitor:**
+3.  **Run the monitor:**
     ```bash
     python titan_watch.py
     ```
