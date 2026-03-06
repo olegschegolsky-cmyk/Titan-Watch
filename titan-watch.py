@@ -7,6 +7,7 @@ import time
 from abc import ABC, abstractmethod
 from collections import deque
 from typing import Any, Callable, Dict, List, Optional, Type
+from abc import ABC, ABCMeta, abstractmethod
 
 import psutil
 
@@ -82,7 +83,7 @@ class MetricValue:
         self.value = val
         self.buffer.append(val)
 
-class CollectorRegistry(type):
+class CollectorRegistry(ABCMeta):
     registry: List[Type['BaseCollector']] = []
 
     def __new__(mcs, name: str, bases: tuple, attrs: dict) -> type:
